@@ -1,0 +1,242 @@
+<!DOCTYPE html> <html> <head> <title>Размеры болтов - Размеры Инфо</title> <meta name=description content='Основные размеры болтов'> <meta name=keywords content='Основные размеры болтов'> <meta http-equiv=Content-Type content='text/html; charset=utf-8'/> <meta name='viewport' content='width=device-width, initial-scale=1.0'> <meta http-equiv='content-language' content=ru/> <script> var ekran = window.outerWidth;document.cookie = 'ekran = ' + ekran</script><link rel='icon' href='../../image/style/favicon.png' type='image/png'/>   <link rel='stylesheet' href='../../css/ready_mob.css'/><script>
+    var data = new Date();
+    if (data.getHours() > 21 || data.getHours() < 7)
+    {
+        document.write ("<style>body{filter:invert(0.15);}</style>");
+    }
+</script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src='https://www.googletagmanager.com/gtag/js?id=UA-61868090-1'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-61868090-1');
+</script>
+
+<script type='text/javascript' >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+
+   ym(29702800, 'init', {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src='https://mc.yandex.ru/watch/29702800' style='position:absolute; left:-9999px;' alt='' /></div></noscript>
+
+<!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+<script type='text/javascript' async='true'>
+(function() {
+    var host = 'www.themoneytizer.com';
+    var element = document.createElement('script');
+    var firstScript = document.getElementsByTagName('script')[0];
+    var url = 'https://quantcast.mgr.consensu.org'
+        .concat('/choice/', '6Fv0cGNfc_bw8', '/', host, '/choice.js')
+    var uspTries = 0;
+    var uspTriesLimit = 3;
+    element.async = true;
+    element.type = 'text/javascript';
+    element.src = url;
+
+    firstScript.parentNode.insertBefore(element, firstScript);
+
+    function makeStub() {
+        var TCF_LOCATOR_NAME = '__tcfapiLocator';
+        var queue = [];
+        var win = window;
+        var cmpFrame;
+
+        function addFrame() {
+            var doc = win.document;
+            var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+            if (!otherCMP) {
+                if (doc.body) {
+                    var iframe = doc.createElement('iframe');
+
+                    iframe.style.cssText = 'display:none';
+                    iframe.name = TCF_LOCATOR_NAME;
+                    doc.body.appendChild(iframe);
+                } else {
+                    setTimeout(addFrame, 5);
+                }
+            }
+            return !otherCMP;
+        }
+
+        function tcfAPIHandler() {
+            var gdprApplies;
+            var args = arguments;
+
+            if (!args.length) {
+                return queue;
+            } else if (args[0] === 'setGdprApplies') {
+                if (
+                    args.length > 3 &&
+                    args[2] === 2 &&
+                    typeof args[3] === 'boolean'
+                ) {
+                    gdprApplies = args[3];
+                    if (typeof args[2] === 'function') {
+                        args[2]('set', true);
+                    }
+                }
+            } else if (args[0] === 'ping') {
+                var retr = {
+                    gdprApplies: gdprApplies,
+                    cmpLoaded: false,
+                    cmpStatus: 'stub'
+                };
+
+                if (typeof args[2] === 'function') {
+                    args[2](retr);
+                }
+            } else {
+                queue.push(args);
+            }
+        }
+
+        function postMessageEventHandler(event) {
+            var msgIsString = typeof event.data === 'string';
+            var json = {};
+
+            try {
+                if (msgIsString) {
+                    json = JSON.parse(event.data);
+                } else {
+                    json = event.data;
+                }
+            } catch (ignore) {}
+
+            var payload = json.__tcfapiCall;
+
+            if (payload) {
+                window.__tcfapi(
+                    payload.command,
+                    payload.version,
+                    function(retValue, success) {
+                        var returnMsg = {
+                            __tcfapiReturn: {
+                                returnValue: retValue,
+                                success: success,
+                                callId: payload.callId
+                            }
+                        };
+                        if (msgIsString) {
+                            returnMsg = JSON.stringify(returnMsg);
+                        }
+                        event.source.postMessage(returnMsg, '*');
+                    },
+                    payload.parameter
+                );
+            }
+        }
+
+        while (win) {
+            try {
+                if (win.frames[TCF_LOCATOR_NAME]) {
+                    cmpFrame = win;
+                    break;
+                }
+            } catch (ignore) {}
+
+            if (win === window.top) {
+                break;
+            }
+            win = win.parent;
+        }
+        if (!cmpFrame) {
+            addFrame();
+            win.__tcfapi = tcfAPIHandler;
+            win.addEventListener('message', postMessageEventHandler, false);
+        }
+    };
+
+    if (typeof module !== 'undefined') {
+        module.exports = makeStub;
+    } else {
+        makeStub();
+    }
+
+    var uspStubFunction = function() {
+        var arg = arguments;
+        if (typeof window.__uspapi !== uspStubFunction) {
+            setTimeout(function() {
+                if (typeof window.__uspapi !== 'undefined') {
+                    window.__uspapi.apply(window.__uspapi, arg);
+                }
+            }, 500);
+        }
+    };
+
+    var checkIfUspIsReady = function() {
+        uspTries++;
+        if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+            console.warn('USP is not accessible');
+        } else {
+            clearInterval(uspInterval);
+        }
+    };
+
+    if (typeof window.__uspapi === 'undefined') {
+        window.__uspapi = uspStubFunction;
+        var uspInterval = setInterval(checkIfUspIsReady, 6000);
+    }
+})();
+</script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PC2RG39');</script> </head> <body> <div class='wrapper'> <div class='main-header'> <div class='logo-header'> <a href='https://razmery.info' class='logo'>Размеры Инфо</a> <button class='navbar-toggler sidenav-toggler ml-auto' type='button' data-toggle='collapse' data-target='collapse' aria-controls='sidebar' aria-expanded='false' aria-label='Toggle navigation'> <span class='navbar-toggler-icon'></span> </button> <button class='topbar-toggler more'><i class='la la-ellipsis-v'></i></button> </div> <nav class='navbar navbar-header navbar-expand-lg'> <div class='container-fluid'> <div class=alfavit> <div class=style-alfavit1><a href='https://razmery.info/strmat/a.html' title=' A'>A</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/b.html' title=' B'>B</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/c.html' title=' C'>C</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/d.html' title=' D'>D</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/e.html' title=' E'>E</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/f.html' title=' F'>F</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/g.html' title=' G'>G</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/h.html' title=' H'>H</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/i.html' title=' I'>I</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/j.html' title=' J'>J</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/k.html' title=' K'>K</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/l.html' title=' L'>L</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/m.html' title=' M'>M</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/n.html' title=' N'>N</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/o.html' title=' O'>O</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/p.html' title=' P'>P</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/q.html' title=' Q'>Q</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/r.html' title=' R'>R</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/s.html' title=' S'>S</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/t.html' title=' T'>T</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/u.html' title=' U'>U</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/v.html' title=' V'>V</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/w.html' title=' W'>W</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/x.html' title=' X'>X</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/y.html' title=' Y'>Y</a></div> <div class=style-alfavit1><a href='https://razmery.info/strmat/z.html' title=' Z'>Z</a></div> <div class=style-alfavit1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div> </div> <div class='search-row'> <script data-ad-client='ca-pub-4487186095387666' async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'></script> </div> </div> </nav> </div> <div class=main-panel> <div class='content'> <div class='container-fluid'> <div class='card' id='text'> <div class='card-header'> <div class='h1'>Размеры болтов </div><div class='card-category'> <a href='https://razmery.info' title='Размеры Инфо'>главная</a> ⇒ <a href=https://razmery.info/strmat/.html title=''>строймат</a> ⇒ <a href='https://razmery.info/strmat/raznoe/razmery-metizov.html' title='Размеры метизов'>метизов</a> </div> </div> <div class='card-footer'> <p>Болт - крепёжное изделие представляющее собой стержень с наружной резьбой на одном конце, с головкой на другом,создающий разборные соединения при помощи гайки или резьбового отверстия в одном из соединяемых изделий.<br/><br/>Болты изготавливаются согласно ГОСТ 7798-70, DIN 933, DIN 931, ГОСТ 24379.1-2012, ГОСТ Р 52643-2006, ГОСТ 16016-2014 и др. </p> </div> </div> <script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4487186095387666'
+     crossorigin='anonymous'></script>
+<!-- Ру-Строймат-Верх -->
+<ins class='adsbygoogle'
+     style='display:block'
+     data-ad-client='ca-pub-4487186095387666'
+     data-ad-slot='8312827234'
+     data-ad-format='auto'
+     data-full-width-responsive='true'></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script> <div class='card' id='text'> <div class='card-body'> <table class='table table-typo'> <tbody> <tr> <td><span class='h2'>Виды болтов ГОСТ, DIN:</span></td></tr><tr><td><p>Самые распространенные виды болтов следующие:</p><ul><li>ступенчатый - болт, у которого диаметр гладкой части стержня превышает номинальный диаметр резьбы;</li><li>откидной - болт с головкой, изготовленной в виде подвижной части шарнирного соединения;</li><li>призонный - болту которого диаметр гладкой части стержня определяется из условия обеспечения работы соединения на срез;</li><li>фундаментный (анкерный) - болт со специальной формой головки, применяемый для крепления оборудования к фундаменту.</li></ul></td> </tr><tr><td><span class='h2'>Возможные размеры:</span></td></tr><tr> <td><p>Диапазон размеров: М1.4 до М160.</p></td> </tr><tr><td><span class='h2'>Условные обозначения:</span></td></tr><tr> <td><p>Пример условного обозначения болта с параметрами: диаметр резьбы 12 (мм), длина 60 (мм), крупный шаг резьбы:<br/><br/>Болт М12х60 ГОСТ 7805-70.<br/><br/>Изготавливаются болты из высокоуглеродистой проволоки повышенной точности методом высадки холодной заготовки с дальнейшей накаткой резьбы.<br/><br/>Полные точные значения в представлены таблице ниже, либо по ссылкам в подразделах.</p></td></tr></tbody></table></div></div> <div style='text-align:center;' id='56052-31'><script src='//ads.themoneytizer.com/s/gen.js?type=31'></script><script src='//ads.themoneytizer.com/s/requestform.js?siteId=56052&formatId=31'></script></div><br/> <div class='card' id='table'> <div class='card-header'> <div class='card-title'>Болты - Полный чертеж</div> </div> <div class='card-body'> <table class='table_chertezh'> <tbody> <tr> <td><a class='cboxElement' rel='colorbox' href='https://razmery.info/image/strmat/razmery-merki-boltov.webp' title = 'Болты - Полный чертеж'> <img src='https://razmery.info/image/strmat/razmery-merki-boltov.webp' width='222' height='320' title = 'Болты - Полный чертеж'></a><br/><br/></td> </tr> </tbody> </table> </div> </div> <div class='card' id='table'> <div class='card-header'> <div class='card-title'><th style=height:50px; colspan=3><span class=style2>Таблица размеров болтов</span></th></div> </div> <div class='card-body'> <table class='table_standart'> <thead> <tr><th><span class='tooltip1 anim' tabindex='0' style='text-align:center;'>Стандарт&nbsp;<img src=https://razmery.info/image/style/vopros2.png alt=spravka width=16 height=16><span style='position:absolute;'><br/>Существующие международные стандарты<br/><br/></span></span></th><th><span class='tooltip1 anim' tabindex='0' style='text-align:center;'>d (мм)&nbsp;<img src=https://razmery.info/image/style/vopros2.png alt=spravka width=16 height=16><span style='position:absolute;'><br/><strong>Номинальный диаметр резьбы (мм)</strong><br/><br/>Диаметр воображаемого цилиндра, описанного вокруг вершин наружной резьбы или вписанного во впадины внутренней резьбы, а также диаметр, условно характеризующий размеры резьбы и используемый при ее обозначении.<br/><br/><img src=https://razmery.info/image/strmat/img-stolb-bolty-diametr_rezby.png alt=spravka width=220 height=220></span></span></th><th><span class='tooltip1 anim' tabindex='0' style='text-align:center;'>l (мм)&nbsp;<img src=https://razmery.info/image/style/vopros2.png alt=spravka width=16 height=16><span style='position:absolute;'><br/><strong>Длина болта (мм)</strong><br/><br/>Длина детали, включая резьбу, но без головки болта.<br/><br/><img src=https://razmery.info/image/strmat/img-stolb-bolty-dlina_bolta.png alt=spravka width=220 height=220></span></span></th></tr> </thead> <tbody> <tr> <td><strong>ГОСТ 7798-70 болт с шестигранной головкой, класс точности В</strong></td><td>M6-M48</td><td>10-300</td> </tr><tr> <td><strong>ГОСТ 7801-81 болт мебельный с увеличенной полукруглой головкой и усом класса точности С</strong></td><td>M6-M20</td><td>25-200</td> </tr><tr> <td><strong>ГОСТ 7802-81 болт с увеличенной полукруглой головкой и квадратным подголовком класса точности С</strong></td><td>M5-M24</td><td>12-260</td> </tr><tr> <td><strong>ГОСТ 7805-70 болт с шестигранной головкой, класс точности A</strong></td><td>М1.6-М48</td><td>10-300</td> </tr><tr> <td><strong>ГОСТ 7808-70 болт класса точности А с шестигранной уменьшенной головкой</strong></td><td>M8-M48</td><td>10-300</td> </tr><tr> <td><strong>ГОСТ 15589-70 болт оцинкованный с шестигранной головкой класса точности С</strong></td><td>M6-M48</td><td>10-300</td> </tr><tr> <td><strong>ГОСТ 22353-77 болт высокопрочный, с шестигранной головкой, класс точности В</strong></td><td>M16-M48</td><td>40-300</td> </tr><tr> <td><strong>ГОСТ Р 52644-2006 болт высокопрочный с шестигранной головкой с увеличенным размером под ключ, класс точности С</strong></td><td>M16-M48</td><td>40-300</td> </tr><tr> <td><strong>DIN 186 болт к пазам станочным, с Т-образной головкой и квадратным подголовком, неполная резьба</strong></td><td>M6-M24</td><td>30-200</td> </tr><tr> <td><strong>DIN 261 T-болт с T-образной головкой для пазов, неполная резьба</strong></td><td>M6-M24</td><td>25-200</td> </tr><tr> <td><strong>DIN 444 болт откидной с ушком, неполная резьба</strong></td><td>M5-M36</td><td>25-300</td> </tr><tr> <td><strong>DIN 529 болты анкерные фундаментные с гайкой для крепления конструкций или оборудования к фундаменту, формы A, B, D, F, С</strong></td><td>M8-M72</td><td>x</td> </tr><tr> <td><strong>DIN 561 болт с уменьшенной головкой и цапфой, установочный, высокопрочный, полная метрическая резьба</strong></td><td>M6-M56</td><td>10-300</td> </tr><tr> <td><strong>DIN 564 болт стопорный высокопрочный с шестигранной уменьшенной головкой и коническим концом</strong></td><td>M6-M36</td><td>12-200</td> </tr><tr> <td><strong>DIN 580 рым-болт с кольцом и буртиком</strong></td><td>M6-M100</td><td>x</td> </tr><tr> <td><strong>DIN 601 болты и гайки DIN 555 крепёжные болты с шестигранной головкой и неполной метрической резьбой</strong></td><td>M5-M64</td><td>x</td> </tr><tr> <td><strong>DIN 603 болт мебельный с полукруглой низкой головкой и квадратным подголовком, неполная и полная метрическая резьба</strong></td><td>M5-M20</td><td>16-200</td> </tr><tr> <td><strong>DIN 604 болт с потайной головкой и усом, неполная метрическая резьба</strong></td><td>M6-M24</td><td>20-160</td> </tr><tr> <td><strong>DIN 605 болт с потайной головкой и высоким квадратным подголовком, неполная метрическая резьба</strong></td><td>M6-M10</td><td>30-60</td> </tr><tr> <td><strong>DIN 607 болт с полукруглой головкой и усом, мебельный, неполная метрическая резьба</strong></td><td>M8-M16</td><td>30-160</td> </tr><tr> <td><strong>DIN 608 болт с потайной головкой и низким квадратным подголовком, неполная метрическая резьба</strong></td><td>M10-M12</td><td>25-50</td> </tr><tr> <td><strong>DIN 609 болт призонный с длинной резьбовой цапфой и шестигранной головкой, с мелкой и крупной резьбой</strong></td><td>M10-M42</td><td>25-200</td> </tr><tr> <td><strong>DIN 610 болт призонный с короткой резьбовой цапфой и шестигранной головкой</strong></td><td>M8-M36</td><td>25-200</td> </tr><tr> <td><strong>DIN 792 болт с потайной цилиндрической головкой и усом, неполная метрическая резьба</strong></td><td>M8-M16</td><td>x</td> </tr><tr> <td><strong>DIN 797 болт анкерный фундаментный стальной оцинкованный</strong></td><td>M24-M100</td><td>x</td> </tr><tr> <td><strong>DIN 931 болт с неполной резьбой и шестигранной головкой, класс точности A, B</strong></td><td>M3-M64</td><td>30-950</td> </tr><tr> <td><strong>DIN 933 болт с полной резьбой и шестигранной головкой, класс точности A, B</strong></td><td>M3-M64</td><td>5-340</td> </tr><tr> <td><strong>DIN 933 SZ болт шестигранный с прямым шлицем, полная резьба</strong></td><td>M3-M8</td><td>5-50</td> </tr><tr> <td><strong>DIN 960 болт с мелкой неполной резьбой с шестигранной головкой, класс точности А, В</strong></td><td>M8-M64</td><td>35-460</td> </tr><tr> <td><strong>DIN 961 болт с мелким шагом резьбы с шестигранной головкой, класс точности А, В</strong></td><td>M8-M64</td><td>16-500</td> </tr><tr> <td><strong>DIN 6914 болт высокопрочный с шестигранной головкой с увеличенным размером под ключ, класс точности С</strong></td><td>M12-M36</td><td>30-200</td> </tr><tr> <td><strong>DIN 6921 болт с фланцем и шестигранной головкой</strong></td><td>M5-M16</td><td>x</td> </tr><tr> <td><strong>DIN 7968 болт с гайкой, прецизионный (призонный) стяжной с шестигранной головкой для стальных строительных конструкций, метрическая резьба</strong></td><td>M12-M30</td><td>30-200</td> </tr><tr> <td><strong>DIN 7992 болт фундаментный с увеличенной T-образной головкой, метрическая резьба</strong></td><td>M24-M100</td><td>100-350</td> </tr><tr> <td><strong>DIN EN 14399-8 высокопрочный, с шестигранной головкой с увеличенным размером под ключ для крепления высоконагруженных предварительно напряженных резьбовых соединений (HV), метрическая резьба</strong></td><td>M12-M36</td><td>40-200</td> </tr><tr> <td><strong>DIN 15237 болт норийный транспортёрный с шайбой для крепления норийных ковшей на конвейерную ленту</strong></td><td>M6-M12</td><td>25-60</td> </tr><tr> <td><strong>DIN 22424 болт с трехгранной головкой и буртиком</strong></td><td>M6-M10</td><td>25-30</td> </tr><tr> <td><strong>DIN 931 болт с дюймовой резьбой UNC, шестигранной головкой, неполной резьбой</strong></td><td>1/4-11/2</td><td>30-160</td> </tr><tr> <td><strong>ISO 4014 болт с неполной резьбой и шестигранной головкой, класс точности A, B</strong></td><td>M3-M64</td><td>30-950</td> </tr><tr> <td><strong>ISO 4016 болт с шестигранной головкой, неполной метрической резьбой, класс точности С</strong></td><td>M5-M64</td><td>16-600</td> </tr> </tbody> </table> </div> </div> <div class='card' id='table'> <div class='card-footer'> <p class='text-info'><strong>Предостережение:</strong> следует учитывать, что приведенные данные являются официальными значениями существующих нормативных документов. Однако следует учитывать, что информация является справочной и не гарантирует однозначной точности.</p> </div> </div> <div class='card' id='smezh'><div class='card-header'><div class='h2'>Болты подробные страницы:</div></div><div class='card-footer'><article><ul><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-1-6-mm.html' title='Размеры болтов м 1-6 mm'>Размеры болтов м 1-6 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-10-mm.html' title='Размеры болтов м 10 mm'>Размеры болтов м 10 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-100-mm.html' title='Размеры болтов м 100 mm'>Размеры болтов м 100 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-110-mm.html' title='Размеры болтов м 110 mm'>Размеры болтов м 110 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-12-mm.html' title='Размеры болтов м 12 mm'>Размеры болтов м 12 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-125-mm.html' title='Размеры болтов м 125 mm'>Размеры болтов м 125 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-14-mm.html' title='Размеры болтов м 14 mm'>Размеры болтов м 14 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-140-mm.html' title='Размеры болтов м 140 mm'>Размеры болтов м 140 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-16-mm.html' title='Размеры болтов м 16 mm'>Размеры болтов м 16 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-160-mm.html' title='Размеры болтов м 160 mm'>Размеры болтов м 160 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-18-mm.html' title='Размеры болтов м 18 mm'>Размеры болтов м 18 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-2-5-mm.html' title='Размеры болтов м 2-5 mm'>Размеры болтов м 2-5 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-2-mm.html' title='Размеры болтов м 2 mm'>Размеры болтов м 2 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-20-mm.html' title='Размеры болтов м 20 mm'>Размеры болтов м 20 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-22-mm.html' title='Размеры болтов м 22 mm'>Размеры болтов м 22 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-24-mm.html' title='Размеры болтов м 24 mm'>Размеры болтов м 24 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-27-mm.html' title='Размеры болтов м 27 mm'>Размеры болтов м 27 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-3-5-mm.html' title='Размеры болтов м 3-5 mm'>Размеры болтов м 3-5 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-3-mm.html' title='Размеры болтов м 3 mm'>Размеры болтов м 3 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-30-mm.html' title='Размеры болтов м 30 mm'>Размеры болтов м 30 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-33-mm.html' title='Размеры болтов м 33 mm'>Размеры болтов м 33 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-36-mm.html' title='Размеры болтов м 36 mm'>Размеры болтов м 36 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-39-mm.html' title='Размеры болтов м 39 mm'>Размеры болтов м 39 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-4-mm.html' title='Размеры болтов м 4 mm'>Размеры болтов м 4 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-42-mm.html' title='Размеры болтов м 42 mm'>Размеры болтов м 42 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-45-mm.html' title='Размеры болтов м 45 mm'>Размеры болтов м 45 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-48-mm.html' title='Размеры болтов м 48 mm'>Размеры болтов м 48 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-5-mm.html' title='Размеры болтов м 5 mm'>Размеры болтов м 5 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-52-mm.html' title='Размеры болтов м 52 mm'>Размеры болтов м 52 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-56-mm.html' title='Размеры болтов м 56 mm'>Размеры болтов м 56 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-6-mm.html' title='Размеры болтов м 6 mm'>Размеры болтов м 6 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-60-mm.html' title='Размеры болтов м 60 mm'>Размеры болтов м 60 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-64-mm.html' title='Размеры болтов м 64 mm'>Размеры болтов м 64 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-68-mm.html' title='Размеры болтов м 68 mm'>Размеры болтов м 68 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-7-mm.html' title='Размеры болтов м 7 mm'>Размеры болтов м 7 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-72-mm.html' title='Размеры болтов м 72 mm'>Размеры болтов м 72 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-76-mm.html' title='Размеры болтов м 76 mm'>Размеры болтов м 76 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-8-mm.html' title='Размеры болтов м 8 mm'>Размеры болтов м 8 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-80-mm.html' title='Размеры болтов м 80 mm'>Размеры болтов м 80 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-m-90-mm.html' title='Размеры болтов м 90 mm'>Размеры болтов м 90 mm</a></li><li><a href='https://razmery.info/strmat/bolty/razmery-boltov-tablica-razmerov.html' title='Размеры болтов таблица размеров'>Размеры болтов таблица размеров</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-ankerov-boltov.html' title='Размеры анкеров болтов метизов'>Анкеров болтов метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-asme-b18_2_1.html' title='Размеры болтов asme b18_2_1 метизов'>Болтов asme b18_2_1 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-15237.html' title='Размеры болтов din 15237 метизов'>Болтов din 15237 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-186.html' title='Размеры болтов din 186 метизов'>Болтов din 186 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-261.html' title='Размеры болтов din 261 метизов'>Болтов din 261 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-444.html' title='Размеры болтов din 444 метизов'>Болтов din 444 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-529.html' title='Размеры болтов din 529 метизов'>Болтов din 529 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-561.html' title='Размеры болтов din 561 метизов'>Болтов din 561 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-564.html' title='Размеры болтов din 564 метизов'>Болтов din 564 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-580.html' title='Размеры болтов din 580 метизов'>Болтов din 580 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-601.html' title='Размеры болтов din 601 метизов'>Болтов din 601 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-603.html' title='Размеры болтов din 603 метизов'>Болтов din 603 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-604.html' title='Размеры болтов din 604 метизов'>Болтов din 604 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-605.html' title='Размеры болтов din 605 метизов'>Болтов din 605 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-607.html' title='Размеры болтов din 607 метизов'>Болтов din 607 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-608.html' title='Размеры болтов din 608 метизов'>Болтов din 608 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-609.html' title='Размеры болтов din 609 метизов'>Болтов din 609 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-610.html' title='Размеры болтов din 610 метизов'>Болтов din 610 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-6914.html' title='Размеры болтов din 6914 метизов'>Болтов din 6914 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-6921.html' title='Размеры болтов din 6921 метизов'>Болтов din 6921 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-792.html' title='Размеры болтов din 792 метизов'>Болтов din 792 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-7968.html' title='Размеры болтов din 7968 метизов'>Болтов din 7968 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-797.html' title='Размеры болтов din 797 метизов'>Болтов din 797 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-7992.html' title='Размеры болтов din 7992 метизов'>Болтов din 7992 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-7999.html' title='Размеры болтов din 7999 метизов'>Болтов din 7999 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-912.html' title='Размеры болтов din 912 метизов'>Болтов din 912 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-931.html' title='Размеры болтов din 931 метизов'>Болтов din 931 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-933.html' title='Размеры болтов din 933 метизов'>Болтов din 933 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-960.html' title='Размеры болтов din 960 метизов'>Болтов din 960 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-961.html' title='Размеры болтов din 961 метизов'>Болтов din 961 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-din-en-14399-8.html' title='Размеры болтов din en 14399-8 метизов'>Болтов din en 14399-8 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-fundamentnyh.html' title='Размеры болтов фундаментных метизов'>Болтов фундаментных метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-golovok.html' title='Размеры болтов головок метизов'>Болтов головок метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-gost-15589-70.html' title='Размеры болтов гост 15589-70 метизов'>Болтов гост 15589-70 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-gost-22353-77.html' title='Размеры болтов гост 22353-77 метизов'>Болтов гост 22353-77 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-gost-7798-70.html' title='Размеры болтов гост 7798-70 метизов'>Болтов гост 7798-70 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-gost-7801-81.html' title='Размеры болтов гост 7801-81 метизов'>Болтов гост 7801-81 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-gost-7802-81.html' title='Размеры болтов гост 7802-81 метизов'>Болтов гост 7802-81 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-gost-7805-70.html' title='Размеры болтов гост 7805-70 метизов'>Болтов гост 7805-70 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-gost-r-52644-2006.html' title='Размеры болтов гост р 52644-2006 метизов'>Болтов гост р 52644-2006 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-iso-4014.html' title='Размеры болтов iso 4014 метизов'>Болтов iso 4014 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-iso-4016.html' title='Размеры болтов iso 4016 метизов'>Болтов iso 4016 метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-mebelnyh.html' title='Размеры болтов мебельных метизов'>Болтов мебельных метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-natyazhnyh.html' title='Размеры болтов натяжных метизов'>Болтов натяжных метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-ocinkovannyh.html' title='Размеры болтов оцинкованных метизов'>Болтов оцинкованных метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-razmer-pod-klyuch.html' title='Размеры болтов размер под ключ метизов'>Болтов размер под ключ метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-s-kolcom.html' title='Размеры болтов с кольцом метизов'>Болтов с кольцом метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-shestigrannikov.html' title='Размеры болтов шестигранников метизов'>Болтов шестигранников метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-boltov-vysokoprochnyh.html' title='Размеры болтов высокопрочных метизов'>Болтов высокопрочных метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-metizov-homutov-odnoboltovyh.html' title='Размеры хомутов одноболтовых метизов'>Хомутов одноболтовых метизов</a></li><li><a href='https://razmery.info/strmat/raznoe/razmery-rezby-shaga-rezby-boltov.html' title='Размеры шага резьбы болтов резьбы'>Шага резьбы болтов резьбы</a></li></ul></article></div></div> <script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4487186095387666'
+     crossorigin='anonymous'></script>
+<!-- Ру-Строймат-Низ -->
+<ins class='adsbygoogle'
+     style='display:block'
+     data-ad-client='ca-pub-4487186095387666'
+     data-ad-slot='3930114297'
+     data-ad-format='auto'
+     data-full-width-responsive='true'></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script> <div class="ecomment_list" id="ecomment_list"> </div><br/><br/><br/>  <script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4487186095387666'
+     crossorigin='anonymous'></script>
+<ins class='adsbygoogle'
+     style='display:block'
+     data-ad-format='autorelaxed'
+     data-ad-client='ca-pub-4487186095387666'
+     data-ad-slot='2816193630'></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script> </div> </div> </div> <footer class='footer'>
+			<div class='container-fluid'>
+				<nav class='pull-left'>
+					<ul class='nav'>
+						<li class='nav-item'>
+							<a class='nav-link' href='https://razmery.info/kontakty.html'>Контакты</a>
+						</li>
+						<li class='nav-item'>
+							<a class='nav-link' href='https://razmery.info/o-site.html'>О сайте</a>
+						</li>
+					</ul>
+				</nav>
+				<div class='copyright ml-auto'>razmery.info</div>				
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
